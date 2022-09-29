@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    command: ./deploy_and_test.sh
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
