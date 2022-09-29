@@ -1,6 +1,6 @@
-FROM node:6
+FROM node:alpine
 
-RUN apt install -y python3
+RUN apk add --no-cache --virtual .gyp python3 make g++
 
 WORKDIR /usr/app
 
